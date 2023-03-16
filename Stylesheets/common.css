@@ -115,6 +115,7 @@ body {
     margin-bottom: 3.2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     display: inline-block;
@@ -126,9 +127,27 @@ body {
     padding: 1.6rem 3.2rem;
     border-radius: 10px;
 
+    /* Onle for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
     /* Put transition on original "state" */
     /* transition: background-color 0.4s; */
     transition: all 0.43s;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: flex-end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #fdf2e9;
+    color: #45260a;
+    align-self: flex-end;
+    padding: 1.2rem;
 }
 
 .btn--full:link,
@@ -171,6 +190,12 @@ body {
     border-bottom: 1.5px solid transparent;
 }
 
+*:focus {
+    outline: none;
+    /* outline: 4px dotted #e67e22;
+    outline-offset: 8px; */
+    box-shadow: 0 0 0 0.8rem #d78b4887;
+}
 
 .grid {
     display: grid;
