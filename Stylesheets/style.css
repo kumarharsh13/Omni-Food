@@ -22,7 +22,9 @@
 /* Navigation */
 /**************************************/
 
-.main-nav {}
+.main-nav {
+    background-color: #fdf2e9;
+}
 
 .main-nav-list {
     list-style: none;
